@@ -1,0 +1,36 @@
+%!TEX program = xelatex
+\documentclass[14pt, openany]{MiddleAges}
+
+% 建议：写作时注释掉背景，导出时开启
+\setbackground{cover/paper_texture.png}
+
+
+% 0. 正文开始
+\begin{document}
+
+    % 1. 扉页 (Title Page)
+    \input{contents/titlepage.tex}
+
+    % 2. 前言部分 (Front Matter)
+    \frontmatter
+    \input{contents/proem.tex}
+
+    % 3. 目录
+    \tableofcontents
+
+    % 4. 正文
+    \mainmatter
+    \input{contents/ch1.tex}
+    \input{contents/ch2.tex}
+    \input{contents/ch3.tex}
+    \input{contents/ch4.tex}
+    \input{contents/ch5.tex}
+
+
+    % 5. 结束
+    \medievaldecoration
+    \begin{center}
+        \textit{Ave Imperator.}
+    \end{center}
+
+\end{document}
