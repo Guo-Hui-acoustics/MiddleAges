@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.2.21)  3 DEC 2025 18:53
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.2.21)  4 DEC 2025 12:31
  restricted system commands enabled.
  file:line:error style messages enabled.
-**c:/Users/86151/Desktop/mwe_century/main.tex
-(c:/Users/86151/Desktop/mwe_century/main.tex
+**c:/Users/86151/Desktop/MiddleAges/main.tex
+(c:/Users/86151/Desktop/MiddleAges/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 Lua module: luaotfload 2024-02-14 3.28 Lua based OpenType font support
@@ -36,7 +36,7 @@ Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
 Inserting `tracingstacklevels' in `input_level_string'. (./MiddleAges.cls
-Document Class: MiddleAges 2025/12/03 v14.1 Ultimate Manuscript Version
+Document Class: MiddleAges 2025/12/04 v16.0 Ultimate Manuscript Version
 (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
 (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/latex/base/bk10.clo
@@ -1012,7 +1012,25 @@ Package luatex.def Info: cover/paper_texture.png  used on input line 33.
 
 
 
-{d:/LenovoSoftstore/TexLive/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./cover/paper_texture.png>]) (./contents/proem.tex (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf)
+{d:/LenovoSoftstore/TexLive/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./cover/paper_texture.png>]) (./contents/copyright.tex (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian71.pgf)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `SpecialElite-Regular' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 44.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 44.
+ (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian71.pgf)
+File: cover/paper_texture.png Graphic file (type png)
+<use cover/paper_texture.png>
+Package luatex.def Info: cover/paper_texture.png  used on input line 82.
+(luatex.def)             Requested size: 597.50229pt x 845.03291pt.
+ [2
+
+]) (./contents/proem.tex (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf)
 Package lettrine.sty Info: Targeted height = 22.73145pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 22.76418pt (I);
@@ -1020,61 +1038,46 @@ Package lettrine.sty Info: Targeted height = 22.73145pt
 )
 File: cover/paper_texture.png Graphic file (type png)
 <use cover/paper_texture.png>
-Package luatex.def Info: cover/paper_texture.png  used on input line 19.
+Package luatex.def Info: cover/paper_texture.png  used on input line 22.
+(luatex.def)             Requested size: 597.50229pt x 845.03291pt.
+ [1
+
+
+
+] (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (./main.toc)
+\tf@toc=\write4
+
+\openout4 = main.toc
+File: cover/paper_texture.png Graphic file (type png)
+<use cover/paper_texture.png>
+Package luatex.def Info: cover/paper_texture.png  used on input line 22.
+(luatex.def)             Requested size: 597.50229pt x 845.03291pt.
+ [2
+
+
+] (./contents/ch1.tex
+File: cover/paper_texture.png Graphic file (type png)
+<use cover/paper_texture.png>
+Package luatex.def Info: cover/paper_texture.png  used on input line 2.
 (luatex.def)             Requested size: 597.50229pt x 845.03291pt.
  [1
 
 
 
 ]
-
-Package marginnote Warning: Consecutive odd pages found.
-(marginnote)                Note, it is not recommended to use consecutive
-(marginnote)                odd pages in a double-ended document.
-(marginnote)                The pages of your document should always
-(marginnote)                be a sequence: odd-even-odd-even-...
-(marginnote)                Maybe you've forgotten a \cleardoublepage before
-(marginnote)                changing the page numbering on page i.
-
-Package marginnote Info: Using workaround for absolute page number on input line 19.
-(d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian70.pgf) (./main.toc)
-\tf@toc=\write4
-
-\openout4 = main.toc
-File: cover/paper_texture.png Graphic file (type png)
-<use cover/paper_texture.png>
-Package luatex.def Info: cover/paper_texture.png  used on input line 19.
-(luatex.def)             Requested size: 597.50229pt x 845.03291pt.
- [2
-
-
-] (./contents/ch1.tex
 Chapter 1.
 (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian88.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian89.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian11.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian11.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian63.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian63.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian63.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian63.pgf)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `SpecialElite-Regular' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 Package lettrine.sty Info: Targeted height = 22.73145pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 22.66628pt (L);
-(lettrine.sty)             reported on input line 24.
+(lettrine.sty)             reported on input line 26.
 File: cover/paper_texture.png Graphic file (type png)
 <use cover/paper_texture.png>
-Package luatex.def Info: cover/paper_texture.png  used on input line 28.
+Package luatex.def Info: cover/paper_texture.png  used on input line 30.
 (luatex.def)             Requested size: 597.50229pt x 845.03291pt.
- [1
+ [2
 
-
-
-] (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian9.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian9.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian9.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian9.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian9.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian9.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian9.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian9.pgf)) (./contents/ch2.tex
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
- (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian11.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian11.pgf)
+] (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian9.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian9.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian9.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian9.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian9.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian9.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian9.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian9.pgf)) (./contents/ch2.tex (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian11.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian11.pgf)
 
 Package fancyhdr Warning: \headheight is too small (20.0pt): 
 (fancyhdr)                Make it at least 32.32388pt, for example:
@@ -1086,7 +1089,7 @@ File: cover/paper_texture.png Graphic file (type png)
 <use cover/paper_texture.png>
 Package luatex.def Info: cover/paper_texture.png  used on input line 2.
 (luatex.def)             Requested size: 597.50229pt x 845.03291pt.
-[2]
+[3]
 Chapter 2.
 (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian88.pgf) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian89.pgf)
 Package lettrine.sty Info: Targeted height = 22.73145pt
@@ -1098,7 +1101,7 @@ File: cover/paper_texture.png Graphic file (type png)
 <use cover/paper_texture.png>
 Package luatex.def Info: cover/paper_texture.png  used on input line 2.
 (luatex.def)             Requested size: 597.50229pt x 845.03291pt.
- [3
+ [4
 
 ]
 Chapter 3.
@@ -1112,7 +1115,7 @@ File: cover/paper_texture.png Graphic file (type png)
 <use cover/paper_texture.png>
 Package luatex.def Info: cover/paper_texture.png  used on input line 2.
 (luatex.def)             Requested size: 597.50229pt x 845.03291pt.
- [4
+ [5
 
 ]
 Chapter 4.
@@ -1126,7 +1129,7 @@ File: cover/paper_texture.png Graphic file (type png)
 <use cover/paper_texture.png>
 Package luatex.def Info: cover/paper_texture.png  used on input line 2.
 (luatex.def)             Requested size: 597.50229pt x 845.03291pt.
- [5
+ [6
 
 ]
 Chapter 5.
@@ -1138,9 +1141,9 @@ Package lettrine.sty Info: Targeted height = 22.73145pt
 ) (d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/tex/generic/pgfornament/vectorian/vectorian88.pgf)
 File: cover/paper_texture.png Graphic file (type png)
 <use cover/paper_texture.png>
-Package luatex.def Info: cover/paper_texture.png  used on input line 36.
+Package luatex.def Info: cover/paper_texture.png  used on input line 39.
 (luatex.def)             Requested size: 597.50229pt x 845.03291pt.
- [6
+ [7
 
 ] (./main.aux)
  ***********
@@ -1154,19 +1157,19 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 )
 
 Here is how much of LuaTeX's memory you used:
- 19491 strings out of 476447
+ 19566 strings out of 476447
  125240,1977958 words of node,token memory allocated
- 3951 words of node memory still in use:
-   21 hlist, 7 vlist, 1 rule, 25 disc, 5 local_par, 74 glue, 72 kern, 11 penalty, 9 margin_kern, 273 glyph, 35 attribute, 55 glue_spec, 35 attribute_list, 2 write, 10 pdf_colorstack nodes
-   avail lists: 1:2,2:8712,3:7638,4:185,5:1283,6:42,7:4784,8:2,9:607,10:12,11:230
- 40675 multiletter control sequences out of 65536+600000
- 59 fonts using 3787183 bytes
- 117i,17n,114p,1035b,1095s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<./fonts/SpecialElite-Regular.ttf><./fonts/GrenzeGotisch-Black.ttf><./fonts/AveriaSerifLibre-Bold.ttf><./fonts/AveriaSerifLibre-BoldItalic.ttf><./fonts/Almendra-Bold.ttf><./fonts/GrenzeGotisch-Bold.ttf><d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (9 pages, 7874521 bytes).
+ 3667 words of node memory still in use:
+   20 hlist, 7 vlist, 1 rule, 24 disc, 5 local_par, 66 glue, 66 kern, 11 penalty, 10 margin_kern, 247 glyph, 35 attribute, 55 glue_spec, 35 attribute_list, 2 write, 10 pdf_colorstack nodes
+   avail lists: 1:1,2:8826,3:7640,4:298,5:1323,6:44,7:5013,8:2,9:644,10:16,11:246
+ 40728 multiletter control sequences out of 65536+600000
+ 69 fonts using 4625407 bytes
+ 117i,17n,114p,1034b,1093s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<./fonts/GrenzeGotisch-Black.ttf><./fonts/SpecialElite-Regular.ttf><./fonts/Almendra-BoldItalic.ttf><./fonts/AveriaSerifLibre-Bold.ttf><./fonts/AveriaSerifLibre-BoldItalic.ttf><./fonts/Almendra-Bold.ttf><./fonts/GrenzeGotisch-Bold.ttf><d:/LenovoSoftstore/TexLive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (11 pages, 7932513 bytes).
 
-PDF statistics: 82 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+PDF statistics: 97 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

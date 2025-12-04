@@ -1,14 +1,15 @@
 \contentsline {chapter}{Proem}{i}{}%
-\contentsline {chapter}{\numberline {1}Genesis of War}{1}{}%
-\contentsline {section}{\numberline {1.1}The Masters and the Envious}{2}{}%
-\contentsline {section}{\numberline {1.2}The Star Gods' Bargain}{2}{}%
-\contentsline {section}{\numberline {1.3}The Biotransference}{2}{}%
-\contentsline {section}{\numberline {1.4}The Galaxy Burns}{2}{}%
-\contentsline {chapter}{\numberline {2}The Age of Gold}{3}{}%
-\contentsline {section}{\numberline {2.1}The Men of Iron}{3}{}%
-\contentsline {chapter}{\numberline {3}The Great Crusade}{4}{}%
-\contentsline {section}{\numberline {3.1}The Primarchs}{4}{}%
-\contentsline {chapter}{\numberline {4}The Heresy}{5}{}%
-\contentsline {section}{\numberline {4.1}The Siege of Terra}{5}{}%
-\contentsline {chapter}{\numberline {5}The Era Indomitus}{6}{}%
+\contentsline {part}{A\hspace {1em}aaa}{1}{}%
+\contentsline {chapter}{\numberline {1}Genesis of War}{2}{}%
+\contentsline {section}{\numberline {1.1}The Masters and the Envious}{3}{}%
+\contentsline {section}{\numberline {1.2}The Star Gods' Bargain}{3}{}%
+\contentsline {section}{\numberline {1.3}The Biotransference}{3}{}%
+\contentsline {section}{\numberline {1.4}The Galaxy Burns}{3}{}%
+\contentsline {chapter}{\numberline {2}The Age of Gold}{4}{}%
+\contentsline {section}{\numberline {2.1}The Men of Iron}{4}{}%
+\contentsline {chapter}{\numberline {3}The Great Crusade}{5}{}%
+\contentsline {section}{\numberline {3.1}The Primarchs}{5}{}%
+\contentsline {chapter}{\numberline {4}The Heresy}{6}{}%
+\contentsline {section}{\numberline {4.1}The Siege of Terra}{6}{}%
+\contentsline {chapter}{\numberline {5}The Era Indomitus}{7}{}%
 \contentsfinish 

@@ -3,18 +3,22 @@
 %% Class Name: MiddleAges
 %% Description: A LaTeX class for medieval-style manuscripts
 %% Author:      Guo-Hui-acoustics
-%% Version:     14.1 (Spacing Optimization)
-%% Last Update: 2025/12/03
+%% Version:     16.0 (TOC Leaders & Clean Part Page)
+%% Last Update: 2025/12/04
 %% ============================================================================
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{MiddleAges}[2025/12/03 v14.1 Ultimate Manuscript Version]
+\ProvidesClass{MiddleAges}[2025/12/04 v16.0 Ultimate Manuscript Version]
 
 
 % 0. 选项传递
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
 \ProcessOptions\relax
 \LoadClass{book}
+
+% 0.1 结构微调
+% 将 Part 编号改为字母 (A, B, C...)
+\renewcommand\thepart{\Alph{part}}
 
 
 % ============================================================================
@@ -38,7 +42,8 @@
 \RequirePackage{lipsum}         % 乱数假文（开发用）
 
 % 标题与目录结构
-\RequirePackage{titlesec}
+% 添加 explicit 选项以允许在格式中使用 #1
+\RequirePackage[explicit]{titlesec}
 \RequirePackage{titletoc}
 \RequirePackage{fancyhdr}
 \RequirePackage{marginnote}
@@ -50,6 +55,7 @@
 % 颜色定义
 \definecolor{rubric}{HTML}{8B0000} % 朱红 (用于强调/装饰)
 \definecolor{ink}{HTML}{362b24}    % 墨色 (用于正文)
+
 
 % 字体配置
 \newcommand{\fontpath}{fonts/}
@@ -149,22 +155,25 @@
     \end{tikzpicture}
 }
 
-% 用户功能：背景设置
+% ============================================================================
+% 用户功能：背景设置 (已修正镜像逻辑)
+% ============================================================================
 \newcommand{\setbackground}[1]{%
     \ClearShipoutPictureBG % 清除之前的背景（防止叠加）
     \AddToShipoutPictureBG{%
         \AtPageLowerLeft{%
             \ifodd\value{page}%
-                % 奇数页：正常显示
-                \includegraphics[width=\paperwidth,height=\paperheight]{#1}%
-            \else%
-                % 偶数页：水平翻转 (Reflect)
+                % 奇数页 (Right Page)：装订线在左。
+                % 原图"左深右浅"，我们需要"左浅"来贴合装订线，所以要镜像翻转。
                 \reflectbox{\includegraphics[width=\paperwidth,height=\paperheight]{#1}}%
+            \else%
+                % 偶数页 (Left Page)：装订线在右。
+                % 原图"左深右浅"，正好浅色在右侧贴合装订线，直接使用。
+                \includegraphics[width=\paperwidth,height=\paperheight]{#1}%
             \fi%
         }%
     }%
 }
-
 % 用户功能：普通装饰分割线
 \newcommand{\medievaldecoration}{%
     \vspace{2em}
@@ -178,7 +187,31 @@
 % ============================================================================
 % 5. 标题格式设计 (Titlesec)
 % ============================================================================
-% Section 统一样式 
+
+% --- Part 样式 (Clean Style) ---
+% 修正：移除了 format 参数中的 \null\clearpage，解决页码错误问题
+% 修正：移除了装饰线，只保留文字
+% 修正：强制 \thispagestyle{empty} 移除页眉
+\titleformat{\part}[display]
+  {\normalfont\centering} 
+  {} 
+  {0pt} 
+  {%
+    \thispagestyle{empty}% 确保当前 Part 页无页眉
+    \begin{tikzpicture}[remember picture, overlay]
+        \node at (current page.center) {%
+            \begin{minipage}{0.8\paperwidth}
+                \centering
+                % 第一行：PART A (大号字，红色)
+                {\fontsize{40}{50}\selectfont\gothicfont\color{rubric} PART \ \thepart}\\[3em]
+                % 第二行：标题 (更大号字，黑色)
+                {\fontsize{80}{60}\selectfont\gothicfont\color{ink} #1}
+            \end{minipage}
+        };
+    \end{tikzpicture}
+  }
+
+% --- Section 样式 ---
 \titleformat{\section}
   {\normalfont\Large\color{rubric}\sffamily\centering}
   {%
@@ -187,33 +220,34 @@
     \raisebox{2pt}{\pgfornament[width=0.4cm]{9}}%
   }
   {0.5em}
-  {}
+  {#1} 
 
-% 动态样式定义函数
-% 定义 FrontMatter (前言) 的章节外观
+% --- Chapter 动态样式定义函数 ---
+
+% FrontMatter Chapter
 \newcommand{\@styleFrontMatterChapter}{%
     \titleformat{\chapter}[display]
       {\normalfont\centering}
       {} {0pt}
-      {\tocTopLine\vspace{-1em}\Huge\color{ink}\gothicfont}
+      {\tocTopLine\vspace{-1em}\Huge\color{ink}\gothicfont ##1}
       [\vspace{0em}\tocBottomLine]
 }
 
-% 定义 MainMatter (正文) 的章节外观
+% MainMatter Chapter
 \newcommand{\@styleMainMatterChapter}{%
     \titleformat{\chapter}[display]
       {\normalfont\centering}
       {\Huge\gothicfont\color{rubric} Chapter \thechapter}
       {0pt}
-      {\chapTopLine\vspace{1em}\Huge\color{ink}\gothicfont}
+      {\chapTopLine\vspace{1em}\Huge\color{ink}\gothicfont ##1}
       [\vspace{0em} \chapBottomLine]
 }
 
-% 定义 Numberless (无编号) 章节外观
+% Numberless Chapter
 \titleformat{name=\chapter,numberless}[display]
   {\normalfont\centering}
   {} {0pt}
-  {\tocTopLine\vspace{0em}\Huge\color{ink}\gothicfont}
+  {\tocTopLine\vspace{0em}\Huge\color{ink}\gothicfont #1}
   [\vspace{0em}\tocBottomLine \vspace{-0.5em}]
 
 
@@ -223,26 +257,36 @@
 
 
 
-
 % ============================================================================
 % 6. 目录样式 (TOC)
 % ============================================================================
 \renewcommand{\contentsname}{Table of Contents}
-% Chapter 条目
+
+% --- Part 条目 ---
+% 保持无页码，作为分割符
+\titlecontents{part}[0pt]
+    {\Large\gothicfont\color{rubric}} % 整体样式
+    {\color{rubric}Part \thecontentslabel\quad} % 标签样式
+    {} % 无编号样式
+    {\hfill \color{rubric}\thecontentspage} % 引导线 + 页码
+
+% --- Chapter 条目 ---
+% 修改：添加了引导线 (Titlerule)
 \titlecontents{chapter}[0pt]
-    {\addvspace{1em}\large\gothicfont\color{ink}}
-    {\color{rubric}Chapter \thecontentslabel\quad}
-    {}
-    {\hfill\color{rubric}\thecontentspage}
+    {\large\gothicfont\color{ink}} % 整体样式
+    {\color{rubric}Chapter \thecontentslabel\quad} % 标签样式
+    {} % 无编号样式
+    {\titlerule*[0.8pc]{\color{rubric}.}\color{rubric}\thecontentspage} % 引导线 + 页码
 
-% Section 条目
+% --- Section 条目 ---
+% 修改：添加了引导线
 \titlecontents{section}[2em]
-    {\addvspace{0.2em}\sffamily\color{ink}}
-    {\thecontentslabel\quad}
-    {}
-    {\hfill\thecontentspage}
+    {\sffamily\color{ink}} % 整体样式
+    {\thecontentslabel\quad} % 标签
+    {} 
+    {\titlerule*[0.8pc]{\color{ink}.}\thecontentspage} % 引导线 + 页码
 
-% 重定义目录命令：添加特殊的页面清除和样式重置
+% 重定义目录命令
 \let\oldtableofcontents\tableofcontents
 \renewcommand{\tableofcontents}{%
     \clearpage
@@ -270,11 +314,11 @@
 \fancypagestyle{mainmatterstyle}{%
     \fancyhf{}
     \fancyhead[CE]{%
-        {\color{rubric}\sffamily \thepage \quad $\cdot$ \quad \leftmark} \\ 
+        {\color{rubric}\sffamily \thepage \quad \cdot \quad \leftmark} \\ 
         \headerOrnamentLine
     }
     \fancyhead[CO]{%
-        {\color{rubric}\sffamily \rightmark \quad $\cdot$ \quad \thepage} \\ 
+        {\color{rubric}\sffamily \rightmark \quad \cdot \quad \thepage} \\ 
         \headerOrnamentLine
     }
     \renewcommand{\headrulewidth}{0pt}
@@ -299,46 +343,37 @@
     }%
 }
 
-% 章节概览模块 (文本框 + 箴言)
-% 参数：#1=标题, #2=列表内容, #3=箴言正文, #4=箴言出处
+% 章节概览模块
 \newcommand{\chapteroverview}[4]{%
     \begin{center}
         \begin{tikzpicture}
-            % --- 1. 核心盒子 (Box) ---
+            % Box
             \node (box) [align=left, text width=0.85\textwidth, inner sep=15pt] {
-                % 框内标题
                 \begin{center}
                     \color{rubric}\pgfornament[width=0.5cm]{11} 
                     \textbf{\large \gothicfont #1} 
                     \color{rubric}\pgfornament[width=0.5cm, symmetry=v]{11}
                 \end{center}
-                % 框内列表
                 \normalsize\sffamily\color{ink} 
                 \begin{itemize} \setlength{\itemsep}{0.3em} 
                     #2
                 \end{itemize}
             };
-            
-            % --- 2. 绘制边框 ---
+            % Border
             \draw[rubric, line width=1pt] (box.north west) rectangle (box.south east);
             \draw[rubric, line width=0.5pt] ([xshift=2pt, yshift=-2pt]box.north west) rectangle ([xshift=-2pt, yshift=2pt]box.south east);
-            
-            % --- 3. 四角装饰 ---
+            % Ornaments
             \node[anchor=north west] at (box.north west) {\color{rubric}\pgfornament[width=0.6cm]{63}};
             \node[anchor=north east] at (box.north east) {\color{rubric}\pgfornament[width=0.6cm, symmetry=v]{63}};
             \node[anchor=south west] at (box.south west) {\color{rubric}\pgfornament[width=0.6cm, symmetry=h]{63}};
             \node[anchor=south east] at (box.south east) {\color{rubric}\pgfornament[width=0.6cm, symmetry=c]{63}};
-
-            % --- 4. 箴言 (Quote) ---
-            % 调整：yshift 控制文本框底边到第一行箴言的距离，设为 \baselineskip (一个行距)
-            % 调整：\\[\baselineskip] 控制正文与作者之间的距离，设为一个行距
+            % Quote
             \node [anchor=north east, text width=0.8\textwidth, align=flush right, yshift=-1em] at (box.south east) {
-                \small\ttfamily\color{ink} "#3"  \\
+                \small\ttfamily\color{ink} ``#3''  \\
                 \small\rmfamily\scshape \color{rubric} --- #4
             };
         \end{tikzpicture}
     \end{center}
-
 }
 
 
@@ -368,7 +403,6 @@
     \color{ink}
     \@styleFrontMatterChapter % 默认应用前言样式
 }
-
 
 \endinput
 %% End of MiddleAges.cls
